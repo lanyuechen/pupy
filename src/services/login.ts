@@ -9,10 +9,21 @@ export type LoginParamsType = {
 };
 
 export async function fakeAccountLogin(params: LoginParamsType) {
-  return request<API.LoginStateType>('/api/login/account', {
-    method: 'POST',
-    data: params,
-  });
+  if (params.username === 'admin' && params.password === 'admin') {
+    return {
+      status: 'ok',
+      type: 'admin'
+    };
+  }
+  return {
+    status: 'error',
+    type: 'admin'
+  };
+  
+  // return request<API.LoginStateType>('/api/login/account', {
+  //   method: 'POST',
+  //   data: params,
+  // });
 }
 
 export async function getFakeCaptcha(mobile: string) {
