@@ -58,17 +58,10 @@ const GlobalHeaderRight: React.FC = () => {
           <Menu>
             <Menu.Item
               onClick={() => {
-                window.open('/~docs');
+                window.open('https://yinhang2.gitbooks.io/-blockly/content/chapter1.html');
               }}
             >
-              组件文档
-            </Menu.Item>
-            <Menu.Item
-              onClick={() => {
-                window.open('https://pro.ant.design/docs/getting-started');
-              }}
-            >
-              Ant Design Pro 文档
+              相关文档
             </Menu.Item>
           </Menu>
         }
@@ -83,7 +76,6 @@ const GlobalHeaderRight: React.FC = () => {
           <Tag color={ENVTagColor[REACT_APP_ENV]}>{REACT_APP_ENV}</Tag>
         </span>
       )}
-      <SelectLang className={styles.action} />
     </Space>
   );
 };

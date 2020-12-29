@@ -6,7 +6,7 @@ export async function query() {
 
 export async function queryCurrent() {
   return {
-    avatar: 'icons/icon-128x128.png',
+    avatar: 'doge.gif',
     name: 'admin',
     title: 'admin',
     group: 'admin',

@@ -16,8 +16,8 @@ export default defineConfig({
     hmr: true,
   },
   layout: {
-    name: 'Ant Design Pro',
-    locale: true,
+    name: 'Pupy Code',
+    locale: false,
     siderWidth: 208,
     ...defaultSettings,
   },
