@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, forwardRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Blockly from 'blockly/core';
 import locale from 'blockly/msg/zh-hans';
 
