@@ -35,7 +35,7 @@ export default (props: any) => {
   const blocklyDiv = useRef<any>();
   const toolbox = useRef<any>();
 
-  const { initialXml, children, store, ...others } = props;
+  const { initialXml, children, store, style, ...others } = props;
 
   useEffect(() => {
     store.workspace = Blockly.inject(blocklyDiv.current, {
@@ -53,7 +53,7 @@ export default (props: any) => {
 
   return (
     <>
-      <div ref={blocklyDiv} style={{height: 500}} />
+      <div ref={blocklyDiv} style={style} />
       <xml
         xmlns="https://developers.google.com/blockly/xml"
         is="blockly"

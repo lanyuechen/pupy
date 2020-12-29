@@ -14,8 +14,7 @@ export default (): React.ReactNode => {
 
   return (
     <PageContainer>
-      <Button onClick={generateCode}>获取</Button>
-      <Blockly store={ref.current}>
+      <Blockly store={ref.current} style={{height: 'calc(100vh - 168px)'}}>
         <Category name="变量">
           <Block type="variables_get" />
           <Block type="variables_set" />
@@ -94,6 +93,7 @@ export default (): React.ReactNode => {
           <Block type="colour_blend" />
         </Category>
       </Blockly>
+      <Button type="primary" style={{marginTop: 15}} onClick={generateCode}>获取</Button>
     </PageContainer>
   );
 };
