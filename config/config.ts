@@ -8,6 +8,8 @@ import theme from './theme';
 const { REACT_APP_ENV } = process.env;
 
 export default defineConfig({
+  publicPath: '/pupy/',
+  // base: 'pupy/',
   history: {
     type: 'hash'
   },
